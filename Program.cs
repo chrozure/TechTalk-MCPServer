@@ -5,7 +5,9 @@ var builder = Host.CreateEmptyApplicationBuilder(settings: null);
 
 builder.Services.AddMcpServer()
     .WithStdioServerTransport()
-    .WithToolsFromAssembly();
+    .WithToolsFromAssembly()
+    .WithResourcesFromAssembly()
+    .WithPromptsFromAssembly();
 
 var app = builder.Build();
 
