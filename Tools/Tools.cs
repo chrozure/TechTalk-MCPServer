@@ -3,6 +3,7 @@ using System.ComponentModel;
 
 namespace TechTalk_MCPServer.Tools;
 
+[McpServerToolType]
 public class Tools
 {
     [McpServerTool(Name = "makeNickname"), Description("Give someone a new nickname")]
